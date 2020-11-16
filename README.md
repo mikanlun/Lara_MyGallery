@@ -45,7 +45,7 @@
 
 　1.env ファイルの設定  
  
-    ・データベース接続  
+    ・適宜、ご変更をお願いします。  
         dbname、user、passwordの設定をしてください。
         /src/functions/function.php 41行
        function connectDb() {
@@ -64,7 +64,7 @@
 
 　2.テーブルの作成  
  
-    ・ユーザーテーブル（users）
+    ・マイグレートをおこなってください。
         CREATE TABLE `users` (
           `id` int(11) NOT NULL AUTO_INCREMENT,
           `name` varchar(255) DEFAULT NULL,
