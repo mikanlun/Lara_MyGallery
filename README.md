@@ -19,9 +19,9 @@
 ## Requirement
 
 ・CentOS 7.4  
-・PHP 7.1  
+・PHP 7.2  
 ・mysql 5.7  
-・twig 2.4  
+・Laravel 6.19
 ・slick 1.8  
 ・bootstrap 4.0  
 
@@ -43,19 +43,7 @@
 
 ## Settings
 
-（注）  
-　プログラムの中で "unlink、rmdir "を使用しています。  
-　テストは行いました。念のためにお伝えします。  
-
-
-    ・unlink  
-      /src/albums/edit.php 120行
-      /src/albums/delete.php 36行
-      /src/auth/account_delete.php 41行
-    ・rmdir  
-      /src/auth/account_delete.php 47行
-
-　1.データベースの設定  
+　1.env ファイルの設定  
  
     ・データベース接続  
         dbname、user、passwordの設定をしてください。
