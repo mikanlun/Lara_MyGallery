@@ -21,7 +21,7 @@
 ・CentOS 7.4  
 ・PHP 7.2  
 ・mysql 5.7  
-・Laravel 6.19　
+・Laravel 6.19  
 ・slick 1.8  
 ・bootstrap 4.0  
 
