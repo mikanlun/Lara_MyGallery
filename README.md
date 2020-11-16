@@ -1,4 +1,4 @@
-# Lara_MyGallery
+# Lara_MyGallery（修正中）
 
 スライドショー
 
