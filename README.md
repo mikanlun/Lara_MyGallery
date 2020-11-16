@@ -9,8 +9,7 @@
 
 ***SAMPLE:***
 
-![mygallery](https://user-images.githubusercontent.com/36429862/37023033-0b39064c-2168-11e8-9e12-ba088542748d.png)
-
+![lara_mygallery](https://user-images.githubusercontent.com/36429862/99235645-74a2b800-2839-11eb-9f9e-52f13116bd65.png)
 ## Features
 
 ・複数ユーザーの画像のスライドショー（認証済みの時は、認証ユーザーのみ表示）  
