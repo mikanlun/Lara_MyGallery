@@ -45,19 +45,20 @@
 
 　1.env ファイルの設定  
  
-    ・適宜、ご変更をお願いします。  
+    ・ 適宜、ご変更をお願いします。  
 
 　2.PERMISSIONS  
  
-    ・strageとbootstrap/cacheディレクトリにread, write 権限を設定してください。
+    ・ strageとbootstrap/cacheディレクトリにread, write 権限を設定してください。
 
 　3.テーブルの作成  
  
-    ・マイグレートをおこなってください。
+    ・ マイグレートをおこなってください。
 
 　４.シンボリックリンク  
  
-    ・public/storageからstorage/app/publicへシンボリックリンクを張ってください。
+    ・ public/storageからstorage/app/publicへシンボリックリンクを張ってください。
+    
      php artisan storage:link
   　
 
