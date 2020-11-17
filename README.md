@@ -55,9 +55,9 @@
  
     ・マイグレートをおこなってください。
 
-    ・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
+    ・public/storageからstorage/app/publicへシンボリックリンクを張ってください
    　　php artisan storage:link
-　
+  　
  4.ドキュメントルート  
  　・ドキュメントルートは、 'gallery' に設定してください。 
 
