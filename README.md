@@ -51,7 +51,11 @@
  
     ・マイグレートをおこなってください。
 
-　3.シンボリックリンク  
+　3.PERMISSIONS  
+ 
+    ・strageとbootstrap/cacheディレクトリにread, write 権限を設定してください。
+  　
+　４.シンボリックリンク  
  
     ・public/storageからstorage/app/publicへシンボリックリンクを張ってください。
      php artisan storage:link
