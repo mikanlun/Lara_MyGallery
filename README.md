@@ -1,6 +1,6 @@
 # Lara_MyGallery（修正中）
 
-スライドショー
+スライドショー（Laravelフレームワーク）
 
 ## Description
 
@@ -94,8 +94,8 @@
           KEY `user_id` (`user_id`),
           CONSTRAINT `albums_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`));
 
-　3.メールアドレスの設定  
-
+　3.シンボリックリンク  
+　　・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
     "admin@example.jp"を変更してください。  
     /app/config/define.php 4行  
     $support_email = "admin@example.jp";   
