@@ -65,42 +65,12 @@
 　2.テーブルの作成  
  
     ・マイグレートをおこなってください。
-        CREATE TABLE `users` (
-          `id` int(11) NOT NULL AUTO_INCREMENT,
-          `name` varchar(255) DEFAULT NULL,
-          `sex` char(1) DEFAULT '1',
-          `birthday` varchar(255) DEFAULT NULL,
-          `zip` varchar(255) DEFAULT NULL,
-          `address` varchar(255) DEFAULT NULL,
-          `tel` varchar(255) DEFAULT NULL,
-          `email` varchar(255) DEFAULT NULL,
-          `password` varchar(255) DEFAULT NULL,
-          `profile` text,
-          `created` datetime DEFAULT NULL,
-          `modified` datetime DEFAULT NULL,
-          PRIMARY KEY (`id`));
-
-    ・アルバムテーブル（albums）  
-        CREATE TABLE `albums` (
-          `id` int(11) NOT NULL AUTO_INCREMENT,
-          `user_id` int(11) DEFAULT NULL,
-          `title` varchar(255) DEFAULT NULL,
-          `path` varchar(255) DEFAULT NULL,
-          `image` varchar(255) DEFAULT NULL,
-          `comment` text,
-          `created` datetime DEFAULT NULL,
-          `modified` datetime DEFAULT NULL,
-          PRIMARY KEY (`id`),
-          KEY `user_id` (`user_id`),
-          CONSTRAINT `albums_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`));
 
 　3.シンボリックリンク  
-　　・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
-    "admin@example.jp"を変更してください。  
-    /app/config/define.php 4行  
-    $support_email = "admin@example.jp";   
-
-　4.ドキュメントルート  
+　　　・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
+   　　php artisan storage:link
+　
+ 4.ドキュメントルート  
  　・ドキュメントルートは、 'gallery' に設定してください。 
 
 　5.ディレクトリのオーナの設定  
