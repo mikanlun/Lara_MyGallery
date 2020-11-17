@@ -53,12 +53,10 @@
 
 　3.シンボリックリンク  
  
-    ・マイグレートをおこなってください。
-
-    ・public/storageからstorage/app/publicへシンボリックリンクを張ってください
-   　　php artisan storage:link
+    ・public/storageからstorage/app/publicへシンボリックリンクを張ってください。
+     php artisan storage:link
   　
- 4.ドキュメントルート  
+  4.ドキュメントルート  
  　・ドキュメントルートは、 'gallery' に設定してください。 
 
 　5.ディレクトリのオーナの設定  
