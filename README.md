@@ -52,7 +52,10 @@
     ・マイグレートをおこなってください。
 
 　3.シンボリックリンク  
-    ・マイグレートをおこなってください。・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
+ 
+    ・マイグレートをおこなってください。
+
+    ・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
    　　php artisan storage:link
 　
  4.ドキュメントルート  
