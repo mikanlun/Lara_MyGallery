@@ -46,28 +46,13 @@
 　1.env ファイルの設定  
  
     ・適宜、ご変更をお願いします。  
-        dbname、user、passwordの設定をしてください。
-        /src/functions/function.php 41行
-       function connectDb() {
-           try {
-               $dsn = "mysql:host=localhost;dbname=dbname";
-               $user = "user";
-               $password = "password";
-
-               $dbh = new PDO($dsn, $user, $password);
-               return $dbh;
-           } catch(PDOException $e) {
-               echo "DB accsess error ! : " . $e->getMessage();
-               exit();
-           }
-       }
 
 　2.テーブルの作成  
  
     ・マイグレートをおこなってください。
 
 　3.シンボリックリンク  
-　　　・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
+    ・マイグレートをおこなってください。・public/storageからstorage/app/publicへシンボリックリンクを張ってください  
    　　php artisan storage:link
 　
  4.ドキュメントルート  
