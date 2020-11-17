@@ -47,31 +47,19 @@
  
     ・適宜、ご変更をお願いします。  
 
-　2.テーブルの作成  
+　2.PERMISSIONS  
+ 
+    ・strageとbootstrap/cacheディレクトリにread, write 権限を設定してください。
+
+　3.テーブルの作成  
  
     ・マイグレートをおこなってください。
 
-　3.PERMISSIONS  
- 
-    ・strageとbootstrap/cacheディレクトリにread, write 権限を設定してください。
-  　
 　４.シンボリックリンク  
  
     ・public/storageからstorage/app/publicへシンボリックリンクを張ってください。
      php artisan storage:link
   　
-  4.ドキュメントルート  
- 　・ドキュメントルートは、 'gallery' に設定してください。 
-
-　5.ディレクトリのオーナの設定  
- 　・画像保存のディレクトリ images のオーナをwebサーバーの実行ユーザーに設定してください。  
-    
-    /images
-
-　6.エントリーポイント  
- 
-    /index.php
-
 
 ## Author
 
