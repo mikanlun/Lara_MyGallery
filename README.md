@@ -1,4 +1,4 @@
-# Lara_MyGallery（修正中）
+# Lara_MyGallery
 
 スライドショー（Laravelフレームワーク）
 
