@@ -8,15 +8,6 @@
     <div class="card  border border-dark mb-3">
         <div class="card-header font-weight-bold">お問い合わせ</div>
         <div class="card-body text-dark mx-3">
-            @if (count($errors) > 0)
-            <div class="alert alert-danger border border-white">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-            @endif
 
             <form action="/support/contact_commit" method="post">
                 <fieldset disabled>
