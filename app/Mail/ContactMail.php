@@ -32,8 +32,8 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->subject('お問い合わせ受け付けました')
-              ->from('noreply@gallery.jp')
-              ->cc(env('MAIL_FROM_ADDRESS','admin@gallery.jp'))
+              ->from( config('gallery.mail_from_noreply') )
+              ->cc( config('gallery.mail_from_address') )
               ->text('support.mail')
               ->with(['contact' => $this->contact]);
     }
