@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light border border-dark my-3 rounded fixedmenu">
     <a class="navbar-brand" href="/">
-        <img src="/assets/brand.svg" width="30" height="30" class="d-inline-block align-top" alt="My Gallery"> My Gallery</a>
+        <img src="/assets/brand.svg" width="30" height="30" class="d-inline-block align-top" alt="{{ config('app.name') }}"> {{ config('app.name') }}</a>
     <ul class="nav justify-content-end">
         @if(Auth::check())
             <li class="nav-item dropdown">
@@ -32,7 +32,7 @@
             </li>
         @endif
         <li class="nav-item">
-            <a class="nav-link" href="/support/about">My Gallery ?</a>
+            <a class="nav-link" href="/support/about">{{ config('app.name') }} ?</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/support/contact">お問い合わせ</a>
