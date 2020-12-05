@@ -113,10 +113,8 @@ class AlbumController extends Controller
     {
         // アルバム情報を取得
         $album = Album::find($id);
-        // ユーザー情報を取得
-        $user = User::find($album->user_id);
 
-        return view('album.edit', compact('album', 'user'));
+        return view('album.edit', compact('album'));
     }
 
     /**
