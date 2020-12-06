@@ -186,10 +186,8 @@ class AlbumController extends Controller
     {
         // アルバム情報を取得
         $album = Album::find($id);
-        // ユーザー情報を取得
-        $user_id = Auth::user()->id;
-        // 画像パス生成
-        $path = 'images' . sprintf('%04d', $user_id);
+        // 画像パス取得
+        $path = $album->path;
         // 既存のアップロードファイル名を取得
         $now_image = $album->image;
         // 既存のアップロードファイルを削除
