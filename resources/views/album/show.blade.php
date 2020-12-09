@@ -40,7 +40,7 @@
                 </fieldset>
                 <div class="form-group row">
                     <div class="col-sm-12 text-center">
-                        @if(Auth::check())
+                        @if(Auth::check() && (Auth::user()->id == $album->user_id))
                         <a class="btn btn-primary btn-lg mr-3" href="/album/{{ $album->id }}/edit" role="button">{{ __('messages.btn_label.edit') }}</a>
                         @endif
                         <a class="btn btn-warning btn-lg mr-3" href="/" role="button">{{ __('messages.btn_label.back') }}</a>
