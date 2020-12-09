@@ -1,6 +1,6 @@
 @extends('layouts.gallery')
 
-@section('title', 'アルバム更新')
+@section('title', 'アルバム編集')
 
 @section('content')
 
