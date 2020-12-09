@@ -34,6 +34,10 @@ class UserController extends Controller
     public function show($id)
     {
         $user = User::find($id);
+        if (is_null($user) || (Auth::user()->id != $id)) {
+            // ユーザー情報が無い時又は認可中のユーザーのIDで無い時トップページに戻る
+            return redirect("/album");
+        }
 
         return view('user.show', compact('user'));
     }
@@ -47,6 +51,10 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
+        if (is_null($user) || (Auth::user()->id != $id)) {
+            // ユーザー情報が無い時又は認可中のユーザーのIDで無い時トップページに戻る
+            return redirect("/album");
+        }
 
         return view('user.edit', compact('user'));
     }
