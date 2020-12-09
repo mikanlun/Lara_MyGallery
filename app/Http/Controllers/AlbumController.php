@@ -97,6 +97,11 @@ class AlbumController extends Controller
     {
         // アルバム情報を取得
         $album = Album::find($id);
+        if (is_null($album)) {
+            // アルバムが無い時はトップページに戻る
+            return redirect("/album");
+        }
+
         // ユーザー情報を取得
         $user = User::find($album->user_id);
 
@@ -113,6 +118,10 @@ class AlbumController extends Controller
     {
         // アルバム情報を取得
         $album = Album::find($id);
+        if (is_null($album) || ($album->user_id != Auth::user()->id)) {
+            // アルバムが無い時又は認可中のユーザーのアルバムで無い時トップページに戻る
+            return redirect("/album");
+        }
 
         return view('album.edit', compact('album'));
     }
