@@ -21,6 +21,10 @@ class UserController extends Controller
     public function profile($id)
     {
         $user = User::find($id);
+        if (is_null($user)) {
+            // ユーザー情報が無い時トップページに戻る
+            return redirect("/album");
+        }
 
         return view('user.profile', compact('user'));
     }
