@@ -24,6 +24,7 @@
 ・Laravel 6.19  
 ・slick 1.8  
 ・bootstrap 4.0  
+・Laravel Framework 6.19.1  
 
 ## Usage
 
